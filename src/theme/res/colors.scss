@@ -1,0 +1,13 @@
+$color-accent: #24c1c7;
+$color-dark: #0a0a0a;
+$color-light: #fff;
+
+$theme-colors: (
+  'accent': $color-accent,
+  'dark': $color-dark,
+  'light': $color-light,
+);
+
+@function color($_key) {
+  @return map-get($theme-colors, $_key);
+}
